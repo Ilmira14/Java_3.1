@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         BonusMilesService service = new BonusMilesService();
-        int mile = service.calculate(10_000);
+        int price = 10_000;
+        int miles = service.calculate(price);
 
-        System.out.println("Количество начисленных миль: " + mile);
+        System.out.println("Количество начисленных миль: " + miles);
     }
 }
